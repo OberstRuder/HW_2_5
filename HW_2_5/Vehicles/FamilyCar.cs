@@ -11,6 +11,7 @@ namespace HW_2_5
         public FamilyCar(int speed, int weight, string info) : base(speed, weight, info) 
         {
             Places = 5;
+
         }
         public override void Drive()
         {

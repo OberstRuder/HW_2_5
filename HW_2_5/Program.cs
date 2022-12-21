@@ -5,7 +5,7 @@ namespace HW_2_5
     {
         static void Main(string[] args)
         {
-            Start.VehicleStart();
+            Adding.Add();
         }
     }
 }

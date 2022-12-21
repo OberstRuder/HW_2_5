@@ -19,6 +19,7 @@ namespace HW_2_5
         public int Weight { get; set; }
         public string Info { get; set; }
         public int Places { get; set; }
+      
 
         public virtual void Drive() { }
 
