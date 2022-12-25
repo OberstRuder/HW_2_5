@@ -15,6 +15,7 @@ namespace HW_2_5
             Weight = weight;
             Info = info;
         }
+
         public int Speed { get; set; }
         public int Weight { get; set; }
         public string Info { get; set; }

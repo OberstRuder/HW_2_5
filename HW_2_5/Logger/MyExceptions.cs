@@ -18,4 +18,15 @@ namespace HW_2_5.Logger
             {nameof(UpperBound), UpperBound}
         };
     }
+    public class WeightOutOfRangeException : Exception
+    {
+        private int LowerBound => 900;
+        private int UpperBound => 100000;
+        public override string Message => "Incorrect weight";
+        public override IDictionary Data => new Dictionary<string, int>
+        {
+            {nameof(LowerBound), LowerBound},
+            {nameof(UpperBound), UpperBound}
+        };
+    }
 }

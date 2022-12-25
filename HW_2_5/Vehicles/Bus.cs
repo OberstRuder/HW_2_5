@@ -10,7 +10,7 @@ namespace HW_2_5
     {
         public Bus(int speed, int weight, string info) : base(speed, weight, info) 
         {
-            Places = 45;;
+            Places = 45;
         }
 
 
