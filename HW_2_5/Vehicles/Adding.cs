@@ -6,7 +6,12 @@ namespace HW_2_5
 {
     internal class Adding
     {
-        static public void Add()
+        private ILogger _logger;
+        public Adding( ILogger logger)
+        {
+            _logger = logger;
+        }
+        public void Add()
         {
             Vehicle[] vehicles = new Vehicle[]
             {
@@ -15,10 +20,11 @@ namespace HW_2_5
                 new SportCar(AddSpeed(), AddWeight(), "SportCar"),
                 new Airplane(AddSpeed(), AddWeight(), "Airplan", 999999)
             };
-
+            _logger.CreateLog("Add vehicles", "Info");
             vehicles.SortedPrint();
             Console.WriteLine();
             vehicles.Heavy();
+            _logger.ShowLog();
         }
 
         static private int AddSpeed()
